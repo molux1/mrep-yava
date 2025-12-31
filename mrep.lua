@@ -8,9 +8,9 @@ encoding.default = 'CP1251'
 local u8 = encoding.UTF8
 
 -- Настройки обновления
-local script_version = 1 
-local update_url = "https://raw.githubusercontent.com/ТВОЙ_НИК/ТВОЙ_РЕПО/main/version.json"
-local script_url = "https://raw.githubusercontent.com/ТВОЙ_НИК/ТВОЙ_РЕПО/main/mrep.lua"
+local script_version = 3
+local update_url = "https://raw.githubusercontent.com/molux1/mrep-yava/main/version.json"
+local script_url = "https://raw.githubusercontent.com/molux1/mrep-yava/main/mrep.lua"
 
 -- Конфигурация
 local config_path = getWorkingDirectory() .. "\\config\\MREP-Yava.ini"
@@ -66,7 +66,7 @@ imgui.OnFrame(function() return win_state[0] end, function()
     imgui.SetNextWindowPos(imgui.ImVec2(sw / 2, sh / 2), imgui.Cond.FirstUseEver, imgui.ImVec2(0.5, 0.5))
     imgui.SetNextWindowSize(imgui.ImVec2(480, 380), imgui.Cond.FirstUseEver)
     
-    imgui.Begin(u8"* Mrep Arizona RP Yava | New Year Edition *", win_state, imgui.WindowFlags.NoResize)
+    imgui.Begin(u8"* Mrep 1111Arizona RP Yava | New Year Edition *", win_state, imgui.WindowFlags.NoResize)
     
     local dl = imgui.GetWindowDrawList()
     local p = imgui.GetWindowPos()
